@@ -9,9 +9,10 @@ DataIndex=20
 VehicleCapacity=10
 k=3
 maxiter=10
+DataPath='Datas/VRP/VRP100/VRP100.xlsx'
 
 # import data
-RawData=pd.read_excel('Datas/VRP/VRP100/VRP100.xlsx')
+RawData=pd.read_excel(DataPath)
 DataSet=RawData.to_numpy()
 DataSet=DataSet.reshape([1000,-1,3])
 print('Data prepared with shape',DataSet.shape)
